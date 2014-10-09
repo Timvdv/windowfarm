@@ -1,0 +1,116 @@
+body
+{
+    font-family: "Open Sans";
+    padding: 30px 0 0 0;
+    background: #eee;
+}
+
+.container 
+{
+    box-shadow: 1px 1px 6px 1px #dedede;
+}
+
+/*
+    Sidebar css
+*/
+
+.sidebar
+{
+    background-color: #354052;
+    color: #A0ABBF;
+    height: 850px;
+    padding: 0;
+}
+
+.menu 
+{
+    padding-top: 30px;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #303A4A;
+}
+
+.menu ul 
+{
+    margin: 0;
+    padding-left: 25px;
+    list-style: none;
+}
+
+.menu li 
+{
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.menu a
+{
+    color: #fff;
+}
+
+.menu a:hover
+{
+    color: #56c231;
+    text-decoration: none;
+}
+
+.menu a:hover, .menu a:hover span
+{
+    color: #56c231;
+}
+
+.menu .glyphicon
+{
+    color: #fff;
+    margin-right: 10px;
+}
+
+.logo 
+{
+    height: 150px;
+    border-bottom: 3px solid #303A4A;
+}
+
+.logo img {
+    width: 90%;
+    margin-top: 58px;
+    margin-left: 10px;
+}
+
+/*
+    dashboard css
+*/
+
+.dashboard
+{
+    background-color: #ECF2F6;
+    height: 850px;
+    padding: 0;
+}
+
+#plant-graph
+{
+    width: 100%;
+    height: 300px;
+    margin: 40px 0 0 -30px;
+}
+
+.dashboard-header
+{
+    background:white;
+    padding: 9px
+}
+
+.dashboard-header h1
+{
+    margin: 21px;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
