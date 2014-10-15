@@ -46,6 +46,11 @@ body
     padding-top: 12px;
     border-left: 5px solid #354052;
     cursor: pointer;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -ms-transition: background .5s;
+    -o-transition: background .5s;
+    transition: background .5s;
 }
 
 .menu li:hover {
@@ -150,6 +155,11 @@ body
     padding: 8px 10px;
     margin: 10%;
     border-radius: 3px;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -ms-transition: background .5s;
+    -o-transition: background .5s;
+    transition: background .5s;
 }
 
 .btn-water-plants:hover
