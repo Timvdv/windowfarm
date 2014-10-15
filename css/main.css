@@ -72,10 +72,10 @@ body
     border-bottom: 3px solid #303A4A;
 }
 
-.logo img {
-    width: 90%;
-    margin-top: 58px;
-    margin-left: 10px;
+.logo img
+{
+    width: 80%;
+    margin: 58px 0 0 15px;
 }
 
 /*
@@ -111,17 +111,21 @@ body
 .plant-block
 {
     float: left;
-    width: 200px;
+    width: 42%;
     height: 180px;
-    background-color: #56C231;
+    background-color: #6f7d95;
     border-radius: 3px;
-    margin: 30px 0 0 47px;
+    margin: 35px 0 0 5%;
     text-align: center;
     padding-top: 54px;
     font-size: 50px;
-    color: #FFF;
+    color: #fff;
 }
 
+.plant-name
+{
+    font-size: 14px;
+}
 
 
 
