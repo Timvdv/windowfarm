@@ -108,6 +108,19 @@ body
     font-size: 25px;
 }
 
+.plant-block
+{
+    float: left;
+    width: 200px;
+    height: 180px;
+    background-color: #56C231;
+    border-radius: 3px;
+    margin: 30px 0 0 47px;
+    text-align: center;
+    padding-top: 54px;
+    font-size: 50px;
+    color: #FFF;
+}
 
 
 
