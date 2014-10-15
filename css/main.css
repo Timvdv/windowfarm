@@ -24,15 +24,15 @@ body
 
 .menu 
 {
-    padding-top: 30px;
-    padding-bottom: 6px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 3px solid #303A4A;
 }
 
 .menu ul 
 {
     margin: 0;
-    padding-left: 25px;
+    padding-left: 0px;
     list-style: none;
 }
 
@@ -41,7 +41,16 @@ body
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
-    padding-bottom: 25px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    padding-top: 12px;
+    border-left: 5px solid #354052;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background: #2F3949;
+    border-left: 5px solid #51c231;
 }
 
 .menu a
@@ -55,9 +64,13 @@ body
     text-decoration: none;
 }
 
+.menu li:hover, .menu li:hover a,.menu li:hover span {
+    color: #fff;
+}
+
 .menu a:hover, .menu a:hover span
 {
-    color: #56c231;
+    color: #fff;
 }
 
 .menu .glyphicon
