@@ -115,7 +115,7 @@ body
     height: 180px;
     background-color: #6f7d95;
     border-radius: 3px;
-    margin: 35px 0 0 5%;
+    margin: 12px 0 0 5%;
     text-align: center;
     padding-top: 54px;
     font-size: 50px;
@@ -127,7 +127,27 @@ body
     font-size: 14px;
 }
 
+.btn-water-plants
+{
+    width: 80%;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+    background-color: #56C231;
+    padding: 8px 10px;
+    margin: 10%;
+    border-radius: 3px;
+}
 
+.btn-water-plants:hover
+{
+    background: #50D224;
+}
 
-
-
+.plant-statistics h1
+{
+    width: 100%;
+    font-size: 23px;
+    border-top: 1px solid #DDD;
+    padding: 20px 0 0 43px;
+}
