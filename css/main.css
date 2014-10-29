@@ -51,11 +51,18 @@ body
     -ms-transition: background .5s;
     -o-transition: background .5s;
     transition: background .5s;
+    color: #A0ABBF;
 }
 
 .menu li:hover {
     background: #2F3949;
     border-left: 5px solid #51c231;
+}
+
+.menu li#active {
+    background: #2F3949;
+    border-left: 5px solid #51c231;
+    color: #fff;
 }
 
 .menu a
@@ -70,6 +77,10 @@ body
 }
 
 .menu li:hover, .menu li:hover a,.menu li:hover span {
+    color: #fff;
+}
+
+.menu li#active, .menu li#active a,.menu li#active span {
     color: #fff;
 }
 
@@ -173,4 +184,9 @@ body
     font-size: 23px;
     border-top: 1px solid #DDD;
     padding: 20px 0 0 43px;
+}
+
+.status{
+    text-align: center;
+    padding:50px;
 }
