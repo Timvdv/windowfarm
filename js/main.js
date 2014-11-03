@@ -39,5 +39,18 @@ $(document).ready(function()
       "dataFormatX": function (x) { return d3.time.format('%Y-%m-%d').parse(x); },
       "tickFormatX": function (x) { return d3.time.format('%A')(x); }
     };
-    var myChart = new xChart('line', plant_data, '#plant-graph', opts);    
+    var myChart = new xChart('line', plant_data, '#plant-graph', opts); 
+
+    updatePlantStats();
+
 });
+function updatePlantStats(){
+  $.ajax({
+    url: "http://169.254.1.1",
+    jsonp: "plantastic",
+    dataType: "jsonp",
+    success: function( response ) {
+        console.log( response ); // server response
+    }
+  });
+}
