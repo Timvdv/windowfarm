@@ -33,8 +33,6 @@ var plant_data = {
 
 $(document).ready(function()
 {
-    console.log('hai');
-
     var opts = {
       "dataFormatX": function (x) { return d3.time.format('%Y-%m-%d').parse(x); },
       "tickFormatX": function (x) { return d3.time.format('%A')(x); }
@@ -43,14 +41,47 @@ $(document).ready(function()
 
     updatePlantStats();
 
+    $('.btn-water-plants').on('click', togglePump)
+
+    window.setInterval(function()
+    {
+        updatePlantStats();
+    }, 5000);
 });
-function updatePlantStats(){
-  $.ajax({
-    url: "http://169.254.1.1",
-    jsonp: "plantastic",
-    dataType: "jsonp",
-    success: function( response ) {
-        console.log( response ); // server response
-    }
-  });
+
+function updatePlantStats()
+{
+    $.getJSON("http://169.254.1.1", function( data )
+    {
+        $('.plant-1 span').html(data.plant1);
+        $('.plant-2 span').html(data.plant2);
+
+        if(data.pump)
+        {
+            $('.btn-water-plants').html('pomp uitzetten').addClass('stop');
+        }
+        else
+        {
+            $('.btn-water-plants').html('pomp aanzetten').removeClass('stop');
+        }
+    });
 }
+
+function togglePump()
+{
+    $this = $(this);
+
+    if($this.hasClass('stop'))
+    {
+            $.getJSON("http://169.254.1.1/uit", function(){});
+            $('.btn-water-plants').html('pomp aanzetten').removeClass('stop');
+    }
+    else
+    {
+        $.getJSON("http://169.254.1.1/aan", function(){});
+        $('.btn-water-plants').html('pomp uitzetten').addClass('stop');
+    }
+}
+
+
+
